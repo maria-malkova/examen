@@ -1,0 +1,19 @@
+mixin header(modifier)
+  .header&attributes(attributes)
+    .header__area
+      .header__menu
+        .header__contact
+          ul.header__address
+            li.header__icon: include img/call.svg
+            li.header__text: a.header__tel(href='tel:+79992031684') +7 (999) 203 16 84 
+          ul.header__address
+            li.header__icon: include img/mail.svg
+            li.header__text: a.header__mail(href='mailto:79992031684@yandex.ru') 79992031684@yandex.ru
+          ul.header__address
+            li.header__icon: include img/global.svg
+            li.header__text г.Санкт-Петербург
+        .header__resume
+          .header__symbol: include img/kwork.svg
+          button(type='button').header__kwork KWORK
+          button(type='button').header__download Скачать резюме
+            .header__arrow: include img/download.svg

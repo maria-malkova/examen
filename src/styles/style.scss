@@ -1,4 +1,6 @@
 @import 'mixins';
+@import url('https://fonts.googleapis.com/css2?family=Bellota+Text&family=Inter:wght@400;700&family=Roboto:wght@400;700&display=swap');
+
 
 /* Plugins */
 
@@ -29,3 +31,6 @@ body {
   display: flex;
   flex-direction: column;
 }
+
+@import './src/blocks/Header/Header';
+@import './src/blocks/portfolio/portfolio';
