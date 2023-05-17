@@ -1,0 +1,13 @@
+mixin personal(modifier)
+  .personal&attributes(attributes)
+    .personal__area
+      .personal__info
+        img(src='img/personal_photo.png' alt='Мария Малькова').personal__photo
+        .personal__title
+          p.personal__name Мария
+          p.personal__surname Малькова
+          p.personal__job HTML-верстальщик
+        ul.personal__social
+          li.personal__icon: include img/vk.svg
+          li.personal__icon: include img/telegram.svg
+          li.personal__icon: include img/git.svg

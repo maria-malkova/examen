@@ -1,0 +1,52 @@
+.education {
+    &__area {
+        width: 100%;
+        max-width: 1080px; 
+        //margin-bottom: 52px;
+    }
+
+    &__info {
+        width: 100%;
+        max-width: 660px;
+        margin: 54px 0 0 660px;
+    }
+
+    &__title {
+        margin-bottom: 44px;
+        display: flex;
+        border-bottom: 1px solid #000000;
+        width: 252px;
+        padding-bottom: 12px;
+    }
+
+    &__name {
+        margin-left: 15px;
+        font-family: 'Roboto';
+        font-weight: 700;
+        font-size: px-to-em(26);
+        line-height: lh-to-per(30, 26);
+    }
+
+    &__list {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+    }
+
+    &__inst {
+        margin-bottom: 20px;
+        font-family: 'Roboto';
+        font-weight: 700;
+        font-size: px-to-em(18);
+        line-height: lh-to-per(21, 18);
+    }
+
+    &__text {
+        margin-bottom: 52px;
+        font-family: 'Roboto';
+        font-weight: 400;
+        font-size: px-to-em(16);
+        line-height: lh-to-per(25, 16);
+    }
+  
+}

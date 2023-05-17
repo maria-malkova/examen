@@ -1,0 +1,79 @@
+.personal {
+    &__area {
+        width: 100%;
+        max-width: 1080px; 
+        margin-bottom: 52px;
+    }
+
+    &__info {
+        width: 100%;
+        max-width: 660px;
+        margin: 54px 0 0 660px;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__photo {
+        width: 100%;
+        max-width: 247px;
+    }
+
+    &__title {
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    &__name {
+        margin-bottom: 10px;
+        font-family: 'Roboto';
+        font-weight: 100;
+        font-size: px-to-em(44);
+        line-height: lh-to-per(52, 44);
+    }
+
+    &__surname {
+        margin-bottom: 40px;
+        font-family: 'Roboto';
+        font-weight: 400;
+        font-size: px-to-em(44);
+        line-height: lh-to-per(52, 44);
+    }
+
+    &__job {
+        font-family: 'Roboto';
+        font-weight: 300;
+        font-size: px-to-em(16);
+        line-height: lh-to-per(19, 16);
+    }
+
+    &__social {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    &__icon {
+        margin-bottom: 46px;
+        cursor: pointer;
+
+        &:last-child {
+            margin-bottom: 0;
+        }
+
+        svg {
+            fill: black;
+            opacity: 1;
+
+            &:hover {
+                fill: #56DCFF;;
+                opacity: 1;
+            }
+        }
+    }
+
+}

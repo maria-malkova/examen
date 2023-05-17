@@ -3,9 +3,9 @@ $(document).ready(function (){
         arrows: true,
         vertical: true,
         verticalSwiping: true,
-        slidesToShow: 2,
+        slidesToShow: 3,
         autoplay: true,
-        autoplaySpeed: 6000,
+        autoplaySpeed: 7000,
 
         prevArrow: '.portfolio__top',
         nextArrow: '.portfolio__bottom',

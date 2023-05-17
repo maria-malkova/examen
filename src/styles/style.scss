@@ -1,6 +1,7 @@
 @import 'mixins';
 @import url('https://fonts.googleapis.com/css2?family=Bellota+Text&family=Inter:wght@400;700&family=Roboto:wght@400;700&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
 
 /* Plugins */
 
@@ -34,3 +35,7 @@ body {
 
 @import './src/blocks/Header/Header';
 @import './src/blocks/portfolio/portfolio';
+@import './src/blocks/personal/personal';
+@import './src/blocks/skills/skills';
+@import './src/blocks/education/education';
+@import './src/blocks/hobby/hobby';

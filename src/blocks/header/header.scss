@@ -4,7 +4,8 @@
 
     &__area {
         width: 100%;
-        max-width: 1080px; 
+        max-width: 1080px;
+        margin-bottom: 54px;
     }
 
     &__menu {
@@ -21,12 +22,18 @@
         padding: 0;
         list-style: none;
         display: flex;
-        cursor: pointer;
     }
 
-    &__tel, &__mail {
+    &__tel, &__mail, &__map {
+        cursor: pointer;
         text-decoration: none;
         color: #000000;
+
+        &:hover {
+            color: #56DCFF;
+            opacity: 1;
+            text-decoration: underline;
+        }
     }
 
     &__text {
@@ -46,6 +53,16 @@
 
     &__symbol {
         margin: -10px 0 10px;
+
+        svg {
+            fill: black;
+            opacity: 1;
+    
+            &:hover {
+                fill: #56DCFF;;
+                opacity: 1;
+            }
+        }
     }
 
     &__kwork {
@@ -60,6 +77,12 @@
         border-radius: 50px;
         background: #D9D9D9;
         cursor: pointer;
+
+        &:hover {
+            color: #56DCFF;
+            opacity: 0.7;
+            text-decoration: underline;
+        }
     }
 
     &__download {
@@ -77,9 +100,13 @@
         background: #D9D9D9;
         border-radius: 50px;
         cursor: pointer;
+
+        &:hover {
+            color: #56DCFF;
+            opacity: 0.7;
+            text-decoration: underline;
+            fill: #56DCFF;;
+        }
     }
-
-
-
 
 }
