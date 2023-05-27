@@ -29,7 +29,7 @@
     &__card {
         margin: 0;
         margin-bottom: 52px;
-        padding: 0 0;
+        padding: 0;
         list-style: none;
         display: flex;
         flex-direction: column;
@@ -49,17 +49,21 @@
         margin-bottom: 4px;
     }
 
-    &__code, &__page {
+    &__link {
+        display: block;
+        margin-top: 12px;
         min-width: 418px;
         min-height: 31px;
         background: #5A5A5A;
         border-radius: 15px;
+        padding: 5px;
+        text-align: center;
         font-family: 'Inter';
         font-weight: 700;
         font-size: px-to-em(16);
         line-height: lh-to-per(25, 16);
         color: #FFFFFF;
-        margin-top: 12px;
+        text-decoration: none;
         cursor: pointer;
 
         &:hover {

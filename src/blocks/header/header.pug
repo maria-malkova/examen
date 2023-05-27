@@ -1,19 +1,19 @@
 mixin header(modifier)
-  .header&attributes(attributes)
+  header.header&attributes(attributes)
     .header__area
-      .header__menu
-        .header__contact
-          ul.header__address
-            li.header__icon: include img/call.svg
-            li.header__text: a.header__tel(href='tel:+79998765432') +7 (999) 876 54 32 
-          ul.header__address
-            li.header__icon: include img/mail.svg
-            li.header__text: a.header__mail(href='mailto:primer_examen@yandex.ru') primer_examen@yandex.ru
-          ul.header__address
-            li.header__icon: include img/global.svg
-            li.header__text: a.header__map(href='#') г.Санкт-Петербург
-        .header__resume
-          .header__symbol: include img/kwork.svg
-          button(type='button').header__kwork KWORK
-          button(type='button').header__download Скачать резюме
-            .header__arrow: include img/download.svg
+      nav.header__contact
+        .header__address
+          .header__icon: include img/call.svg
+          a.header__info(href='tel:+79998765432') +7 (999) 876 54 32 
+        .header__address
+          .header__icon: include img/mail.svg
+          a.header__info(href='mailto:primer_examen@yandex.ru') primer_examen@yandex.ru
+        .header__address
+          .header__icon: include img/global.svg
+          a.header__info(href='#') г.Санкт-Петербург
+      .header__resume
+        .header__symbol: include img/kwork.svg
+        a.header__kwork(href='#') KWORK
+        a.header__download(href='#') Скачать резюме 
+          include img/download.svg
+

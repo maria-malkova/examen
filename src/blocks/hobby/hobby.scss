@@ -1,17 +1,11 @@
 .hobby {
     &__area {
         width: 100%;
-        max-width: 1080px; 
-        margin-bottom: 100px;
-    }
-
-    &__info {
-        width: 100%;
         max-width: 660px;
-        margin: 54px 0 0 660px;
+        margin: 54px 0 100px 660px;
     }
 
-    &__title {
+    &__chapter {
         margin-bottom: 44px;
         display: flex;
         border-bottom: 1px solid #000000;
@@ -21,7 +15,6 @@
 
     &__name {
         margin-left: 15px;
-        font-family: 'Roboto';
         font-weight: 700;
         font-size: px-to-em(26);
         line-height: lh-to-per(30, 26);
@@ -34,10 +27,7 @@
         display: flex;
         justify-content: space-between;
         text-align: center;
-    }
 
-    &__photo {
-        margin-bottom: 10px;
         svg {
             width: 90px;
             height: 90px;
@@ -45,7 +35,7 @@
     }
 
     &__text {
-        font-family: 'Roboto';
+        margin-top: 10px;
         font-weight: 400;
         font-size: px-to-em(16);
         line-height: lh-to-per(25, 16);

@@ -1,14 +1,13 @@
 mixin skills(modifier)
-  .skills&attributes(attributes)
+  section.skills&attributes(attributes)
     .skills__area
-      .skills__info
-        .skills__title
-          include img/skills_gear.svg
-          h2.skills__name Навыки
-        .skills__circle  
-          include img/skills_html.svg
-          include img/skills_css.svg
-          include img/skills_js.svg
-          include img/skills_git.svg
+      .skills__chapter
+        include img/skills_gear.svg
+        h2.skills__name Навыки
+      .skills__circle  
+        include img/skills_html.svg
+        include img/skills_css.svg
+        include img/skills_js.svg
+        include img/skills_git.svg
         
         // вернусь к кружочкам позже

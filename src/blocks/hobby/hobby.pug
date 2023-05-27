@@ -1,23 +1,22 @@
 mixin hobby(modifier)
-  .hobby&attributes(attributes)
+  section.hobby&attributes(attributes)
     .hobby__area
-      .hobby__info 
-        .hobby__title
-          include img/hobby_flapper.svg
-          h2.hobby__name Увлечения
-        ul.hobby__list
-          li.hobby__item
-            p.hobby__photo: include img/magic.svg
-            p.hobby__text Пример
-          li.hobby__item
-            p.hobby__photo: include img/pet.svg
-            p.hobby__text Пример
-          li.hobby__item
-            p.hobby__photo: include img/book.svg
-            p.hobby__text Пример
-          li.hobby__item
-            p.hobby__photo: include img/teddy.svg
-            p.hobby__text Пример
-          li.hobby__item
-            p.hobby__photo: include img/life.svg
-            p.hobby__text Пример
+      .hobby__chapter
+        include img/hobby_flapper.svg
+        h2.hobby__name Увлечения
+      ul.hobby__list
+        li.hobby__item
+          include img/magic.svg
+          p.hobby__text Пример
+        li.hobby__item
+          include img/pet.svg
+          p.hobby__text Пример
+        li.hobby__item
+          include img/book.svg
+          p.hobby__text Пример
+        li.hobby__item
+          include img/teddy.svg
+          p.hobby__text Пример
+        li.hobby__item
+          include img/life.svg
+          p.hobby__text Пример

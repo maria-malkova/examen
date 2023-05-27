@@ -1,17 +1,11 @@
 .skills {
     &__area {
         width: 100%;
-        max-width: 1080px; 
-        margin-bottom: 52px;
-    }
-
-    &__info {
-        width: 100%;
         max-width: 660px;
-        margin: 54px 0 0 660px;
+        margin: 54px 0 52px 660px;
     }
 
-    &__title {
+    &__chapter {
         margin-bottom: 44px;
         display: flex;
         border-bottom: 1px solid #000000;
@@ -21,7 +15,6 @@
 
     &__name {
         margin-left: 15px;
-        font-family: 'Roboto';
         font-weight: 700;
         font-size: px-to-em(26);
         line-height: lh-to-per(30, 26);
