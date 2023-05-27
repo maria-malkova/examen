@@ -1,6 +1,5 @@
 mixin portfolio(modifier)
-  section.portfolio&attributes(attributes)
-    .portfolio__area 
+  .portfolio(class=cl ? `${cl}__portfolio` : '')
       h1.portfolio__title Портфолио
       img(src='img/portfolio_arrow.png' alt='Стрелочка вверх').portfolio__top
       ul.portfolio__list
