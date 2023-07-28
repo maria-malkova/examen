@@ -1,8 +1,11 @@
-.skills {
+.skills {     
+   
     &__area {
         width: 100%;
-        max-width: 660px;
-        margin: 0 0 52px 660px;
+        max-width: 1280px;
+        padding: 0 0 62px 660px;
+        color: var(--text-color);
+        
     }
 
     &__chapter {
@@ -11,6 +14,11 @@
         border-bottom: 1px solid #000000;
         width: 252px;
         padding-bottom: 12px;
+
+        svg {
+            fill: red;
+            opacity: 1;
+        }
     }
 
     &__name {
@@ -23,6 +31,71 @@
     &__circle { // вернусь к кружочкам позже
         display: flex;
         justify-content: space-between;
+
+        
     }
-  
+
+    &__test {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+        transition: background 3s;
+        // background: 
+        //   radial-gradient(closest-side, white 93%, transparent 80% 100%),
+        //   conic-gradient(#56DCFF 85%, transparent 0%, rgba(31, 34, 31, 0.45) 15% );    
+        background: var(--bkg-skills);
+        
+        
+    }
+
+
+    @media screen and (max-width: 1201px) {
+        &__area {
+            padding: 0 60px 52px 600px;
+        }
+    }
+
+    @media screen and (max-width: 991px) {
+        &__area {
+            padding: 0 40px 52px 460px;
+        }
+
+        &__name {
+            font-size: px-to-em(22);
+            line-height: lh-to-per(25, 22);
+        }
+    }
+
+    @media screen and (max-width: 768px) {
+        &__area {
+            padding: 0 20px 52px 340px;
+        }
+    }
+
+    @media screen and (max-width: 480px) {
+        &__area {
+            padding: 0 20px 52px 20px;
+        }
+
+        &__chapter {
+            margin-bottom: 34px;
+        }
+
+        &__name {
+            font-size: px-to-em(18);
+            line-height: lh-to-per(21, 18);
+        }
+
+        &__circle { // вернусь к кружочкам позже
+            svg {
+                width: 25px;
+                height: 25px;
+            }
+        }
+    }
+   
+
 }

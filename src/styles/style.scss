@@ -4,6 +4,43 @@
 /* Plugins */
 
 
+/*theme */
+
+body {
+  --text-color: #000000;
+  --bkg-color:  white; 
+  --bkg-color-portfolio: #D9D9D9;
+  --text-color-portfolio: #000000;
+  --text-color-link: #000000;
+  --bkg-color-link: #5A5A5A;
+  --bkg-skills: 
+    radial-gradient(closest-side, white 93%, transparent 80% 100%),
+    conic-gradient(#56DCFF 85%, transparent 0%, rgba(31, 34, 31, 0.45) 15% ); 
+}
+
+body.dark-theme {
+  --text-color: #D9D9D9;
+  --bkg-color: #2A2D36;
+  --bkg-color-portfolio: #E5DFD3;
+  --text-color-portfolio: #394244;
+  --text-color-link: #E5DFD3;
+  --bkg-color-link: #2A2D36;
+  --bkg-skills: 
+    radial-gradient(closest-side, #2A2D36 93%, transparent 80% 100%),
+    conic-gradient(#56DCFF 85%, transparent 0%, rgba(31, 34, 31, 0.45) 15% ); 
+
+
+
+  --border-bottom: red;
+}
+
+
+
+
+
+
+
+
 
 /* Blocks */
 
@@ -38,3 +75,4 @@ body {
 @import './src/blocks/skills/skills';
 @import './src/blocks/education/education';
 @import './src/blocks/hobby/hobby';
+@import './src/blocks/portfolio_mobile/portfolio_mobile';

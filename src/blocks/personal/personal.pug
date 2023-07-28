@@ -2,11 +2,32 @@ mixin personal(modifier)
   section.personal&attributes(attributes)
     .personal__area
       img(src='img/personal_photo.png' alt='Мария Малькова').personal__photo
-      .personal__info
-        p.personal__name Мария
-        p.personal__surname Малькова
-        p.personal__job HTML-верстальщик
-      ul.personal__social
-        li.personal__icon: include img/vk.svg
-        li.personal__icon: include img/telegram.svg
-        li.personal__icon: include img/git.svg
+      .personal__block  
+        .personal__info
+          p.personal__name Мария
+          p.personal__surname Малькова
+          p.personal__job HTML-верстальщик
+        ul.personal__social
+          li.personal__icon: include img/vk.svg
+          li.personal__icon: include img/telegram.svg
+          li.personal__icon: include img/git.svg
+    .personal__mobile
+      .personal__mdata
+        .personal__minfo 
+          p.personal__mname Мария
+          p.personal__msurname Малькова
+        p.personal__mjob HTML-верстальщик
+        .personal__msocial
+          li.personal__micon: include img/vk.svg
+          li.personal__micon: include img/telegram.svg
+          li.personal__micon: include img/git.svg
+      img(src='img/personal_photo.png' alt='Мария Малькова').personal__mphoto
+    .personal__mresume
+      a.personal__mdownload(href='#') Скачать резюме 
+        include img/mdownload.svg
+      .personal__msymbol: include img/kwork.svg
+      a.personal__mkwork(href='#') KWORK
+
+
+
+
