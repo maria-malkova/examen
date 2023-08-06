@@ -1,5 +1,7 @@
 .portfolio_mobile {
 
+    background-color: var(--bkg-color-mobile);
+
     @media screen and (min-width: 481px) {
         display: none;
     }   
@@ -9,11 +11,16 @@
         padding: 0 20px 30px 20px;
 
         &__chapter {
+            color: var(--text-color);
             margin-bottom: 43px;
             display: flex;
-            border-bottom: 1px solid #000000;
+            border-bottom: var(--border);
             width: 252px;
             padding-bottom: 12px;
+            svg {
+                fill: var(--black-blue);
+                opacity: 1;
+            }
         }
 
         &__title {

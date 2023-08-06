@@ -20,6 +20,13 @@
         display: flex;
     }
 
+    &__icon {
+        svg {
+            fill: var(--black-blue);
+            opacity: 1;
+        }
+    }
+
     &__info {
         margin-left: 22px;
         font-weight: 700;
@@ -44,17 +51,52 @@
 
     &__symbol {
         margin: -10px 0 10px;
-
+        cursor: pointer;
         svg {
-            fill: black;
+            fill: var(--black-blue);
             opacity: 1;
     
             &:hover {
-                fill: #56DCFF;;
+                fill: var(--blue-white);
                 opacity: 1;
             }
         }
     }
+
+    // &__tooltip {
+    //     position: relative;
+    // }
+    // &__tooltip, &__content {
+    //     display: none;
+    //     position: absolute;
+    //     background-color: #fff; /* Фон подсказки */
+    //     padding: 0rem 1.2rem; /* Отступы от края */
+    //     top: -20%; /* Позиция подсказки */
+    //     text-align: center;
+    //     font-size: 1rem;
+    //     color: #a8d7e0; /* Цвет текста */
+    // }
+    // &__tooltip:hover, &__content {
+    //     display: block;
+    // }
+
+    &__content {
+        display: none;
+        //position: absolute;
+        //top: -20%; /* Позиция подсказки */
+        padding: 5px;
+        text-align: center;
+        background-color: blue;
+        color: white;
+        font-weight: 400;
+        font-size: px-to-em(14);
+        line-height: lh-to-per(19, 14);
+    }
+
+    &__symbol:hover, &__content {
+        display: block;
+    }
+
 
     &__kwork {
         margin-bottom: 34px;
@@ -146,6 +188,7 @@
 
     @media screen and (max-width: 480px) {
         margin-bottom: 0;
+
         &__area {
             display: none;
         }

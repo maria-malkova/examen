@@ -5,18 +5,18 @@
         max-width: 1280px;
         padding: 0 0 62px 660px;
         color: var(--text-color);
-        
+        background-color: var(--bkg-color);
     }
 
     &__chapter {
         margin-bottom: 44px;
         display: flex;
-        border-bottom: 1px solid #000000;
+        border-bottom: var(--border);
         width: 252px;
         padding-bottom: 12px;
 
         svg {
-            fill: red;
+            fill: var(--black-blue);
             opacity: 1;
         }
     }
@@ -28,11 +28,13 @@
         line-height: lh-to-per(30, 26);
     }
 
-    &__circle { // вернусь к кружочкам позже
+    &__circle {
         display: flex;
         justify-content: space-between;
-
-        
+        svg {
+            fill: var(--black-white);
+            opacity: 1;
+        }
     }
 
     &__test {
@@ -46,9 +48,40 @@
         // background: 
         //   radial-gradient(closest-side, white 93%, transparent 80% 100%),
         //   conic-gradient(#56DCFF 85%, transparent 0%, rgba(31, 34, 31, 0.45) 15% );    
-        background: var(--bkg-skills);
-        
-        
+        background: var(--bkg-skills); 
+    }
+
+    &__test2 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+        transition: background 3s;
+        background: var(--bkg-skills2); 
+    }
+
+    &__test3 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+        transition: background 3s;
+        background: var(--bkg-skills3); 
+    }
+
+    &__test4 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+        transition: background 3s;
+        background: var(--bkg-skills4); 
     }
 
 
@@ -89,11 +122,16 @@
             line-height: lh-to-per(21, 18);
         }
 
-        &__circle { // вернусь к кружочкам позже
+        &__circle { 
             svg {
-                width: 25px;
-                height: 25px;
+                width: 40px;
+                height: 40px;
             }
+        }
+
+        &__test, &__test2, &__test3, &__test4 {
+            width: 75px;
+            height: 75px;
         }
     }
    

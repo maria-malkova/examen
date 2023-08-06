@@ -4,14 +4,19 @@
         max-width: 1280px;
         padding: 0 0 62px 660px;
         color: var(--text-color);
+        background-color: var(--bkg-color-mobile);
     }
 
     &__chapter {
         margin-bottom: 44px;
         display: flex;
-        border-bottom: 1px solid #000000;
+        border-bottom: var(--border);
         width: 252px;
         padding-bottom: 12px;
+        svg {
+            fill: var(--black-blue);
+            opacity: 1;
+        }
     }
 
     &__name {
@@ -32,6 +37,13 @@
         svg {
             width: 90px;
             height: 90px;
+        }
+    }
+
+    &__item {
+        svg {
+            fill: var(--black-white);
+            opacity: 1;
         }
     }
 
