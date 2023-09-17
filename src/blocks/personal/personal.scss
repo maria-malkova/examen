@@ -276,7 +276,8 @@
         }
 
         &__msymbol {    
-           
+            position: relative;
+            cursor: pointer;
             svg {
                 fill: var(--black-blue);
                 opacity: 1;
@@ -286,6 +287,22 @@
                     opacity: 1;
                 }
             }
+        }
+
+        &__msymbol:hover::after {
+            content: attr(data-title);
+            position: absolute;
+            z-index: 8;
+            left: 140%;
+            top: -60%;
+            padding: 5px 10px;
+            width: 100%;
+            min-width: 120px;
+            color: #56DCFF;
+            font-weight: 700;
+            font-size: px-to-em(16);
+            line-height: lh-to-per(19, 16);
+    
         }
     
         &__mkwork {

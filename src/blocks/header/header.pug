@@ -13,9 +13,7 @@ mixin header(modifier)
           .header__icon: include img/global.svg
           a.header__info(href='#') г.Санкт-Петербург
       .header__resume
-        .header__tooltip  
-          .header__symbol: include img/kwork.svg
-          p.header__content Изменить тему
+        .header__symbol(data-title = 'Изменить тему'): include img/kwork.svg
         a.header__kwork(href='#') KWORK
         a.header__download(href='#') Скачать резюме 
           include img/download.svg

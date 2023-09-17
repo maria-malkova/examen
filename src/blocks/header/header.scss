@@ -50,8 +50,10 @@
     }
 
     &__symbol {
+        position: relative;
         margin: -10px 0 10px;
         cursor: pointer;
+        transition: opacity 2s;
         svg {
             fill: var(--black-blue);
             opacity: 1;
@@ -63,38 +65,20 @@
         }
     }
 
-    // &__tooltip {
-    //     position: relative;
-    // }
-    // &__tooltip, &__content {
-    //     display: none;
-    //     position: absolute;
-    //     background-color: #fff; /* Фон подсказки */
-    //     padding: 0rem 1.2rem; /* Отступы от края */
-    //     top: -20%; /* Позиция подсказки */
-    //     text-align: center;
-    //     font-size: 1rem;
-    //     color: #a8d7e0; /* Цвет текста */
-    // }
-    // &__tooltip:hover, &__content {
-    //     display: block;
-    // }
-
-    &__content {
-        display: none;
-        //position: absolute;
-        //top: -20%; /* Позиция подсказки */
-        padding: 5px;
-        text-align: center;
-        background-color: blue;
-        color: white;
-        font-weight: 400;
-        font-size: px-to-em(14);
-        line-height: lh-to-per(19, 14);
-    }
-
-    &__symbol:hover, &__content {
-        display: block;
+    
+    &__symbol:hover::after {
+        content: attr(data-title);
+        position: absolute;
+        z-index: 8;
+        left: 140%;
+        top: -60%;
+        padding: 5px 10px;
+        width: 100%;
+        min-width: 120px;
+        color: #56DCFF;
+        font-weight: 700;
+        font-size: px-to-em(16);
+        line-height: lh-to-per(19, 16);
     }
 
 
