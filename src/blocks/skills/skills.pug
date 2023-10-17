@@ -4,12 +4,6 @@ mixin skills(modifier)
       .skills__chapter
         include img/skills_gear.svg
         h2.skills__name Навыки
-      //- .skills__circle
-      //-   .skills__test: include img/skills_html.svg
-      //-   .skills__test2: include img/skills_css.svg
-      //-   .skills__test3: include img/skills_js.svg
-      //-   .skills__test4: include img/skills_git.svg
-
       .skills__skills  
         .skills__skill
           .pie.animate.no-round(style="--p: 70;")
@@ -17,7 +11,7 @@ mixin skills(modifier)
               include img/skills_html.svg
           p.skills__text HTML 5
         .skills__skill
-          pie.animate.no-round(style="--p: 40;")
+          .pie.animate.no-round(style="--p: 40;")
             .skills__image 
               include img/skills_css.svg
           p.skills__text CSS 3
@@ -27,7 +21,7 @@ mixin skills(modifier)
               include img/skills_js.svg
           p.skills__text Java Script 
         .skills__skill
-          pie.animate.no-round(style="--p: 40;")
+          .pie.animate.no-round(style="--p: 40;")
             .skills__image 
               include img/skills_git.svg
           p.skills__text Git

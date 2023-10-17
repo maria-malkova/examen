@@ -35,36 +35,38 @@
     }
 
     &__skills {
-        padding: 17px 26px 18ox 32px;
+       // padding: 17px 26px 18px 32px;
         display: flex;
         flex-wrap: wrap;
         justify-content: space-between;
-        gap: 10px;
+        gap: 30px;
     }
 
     &__skill {
         display: flex;
         flex-direction: column;
         align-items: center;
-        width: 80px;
+        width: 120px;
         height: auto;
     }
 
     .pie {
-        --c: red;
+        --c: #56DCFF;
         --b: 4px;
-        --w: 50px;
+        --w: 90px;
         width: var(--w);
         aspect-ratio: 1;
         position: relative;
         display: inline-grid;
         margin: 4px;
         place-content: center;
-        font-size: 25px;
+        font-size: 95px;
+       
     }
 
-    .animate {
+    .animate  {
         animation: p 1s .5s both;
+        
     }
 
     .pie:before,
@@ -73,11 +75,11 @@
         position: absolute;
         border-radius: 50%;
     }
-
+    
     .pie:before {
         inset: 0;
-        background: radial-gradient(farthest-side,var(--c) 98%,#0000) top/var(--b) var(--b) no-repeat, conic-gradient(var(--c) calc(var(--c))); 
-        -webkit-mask: radial-gradient(farthest-side,#0000 calc(99% - var(--b)), #000 calc(100% - var(--b)));
+        background: radial-gradient(farthest-side,var(--c) 98%,#0000) top/var(--b) var(--b) no-repeat, conic-gradient(var(--c) calc(var(--p)*1%),#0000 0);
+        -webkit-mask: radial-gradient(farthest-side,#0000 calc(99% - var(--b)),#000 calc(100% - var(--b)));
          mask: radial-gradient(farthest-side,#0000 calc(99% - var(--b)),#000 calc(100% - var(--b)));
     }
 
@@ -102,8 +104,8 @@
     &__image {
         background-color: #F0ECEC;
         border-radius: 50%;
-        width: 35px;
-        height: 35px;
+        width: 55px;
+        height: 55px;
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -112,72 +114,12 @@
     }
 
     &__text {
-        font-family: 'Roboto';
-        font-size: px-to-em(12);
+        font-size: px-to-em(16);
         line-height: 140%;
         text-transform: capitalize;
-        color: #847D7D;
+        color: var(--text-color);
         text-align: left;
     }
-
-
-
-
-
-
-    // &__circle {
-    //     display: flex;
-    //     justify-content: space-between;
-    //     svg {
-    //         fill: var(--black-white);
-    //         opacity: 1;
-    //     }
-    // }
-    // 
-    // &__test {
-    //     display: flex;
-    //     justify-content: center;
-    //     align-items: center;
-    //     width: 100px;
-    //     height: 100px;
-    //     border-radius: 50%;
-    //     transition: background 0,3s ease; 
-    //     background: var(--bkg-skills); 
-    // }
-
-    // &__test2 {
-    //     display: flex;
-    //     justify-content: center;
-    //     align-items: center;
-    //     width: 100px;
-    //     height: 100px;
-    //     border-radius: 50%;
-    //     transition: background 3s;
-    //     background: var(--bkg-skills2); 
-    // }
-
-    // &__test3 {
-    //     display: flex;
-    //     justify-content: center;
-    //     align-items: center;
-    //     width: 100px;
-    //     height: 100px;
-    //     border-radius: 50%;
-    //     transition: background 3s;
-    //     background: var(--bkg-skills3); 
-    // }
-
-    // &__test4 {
-    //     display: flex;
-    //     justify-content: center;
-    //     align-items: center;
-    //     width: 100px;
-    //     height: 100px;
-    //     border-radius: 50%;
-    //     background: var(--bkg-skills4);
-    //     transition: background 3s;
-
-    // }
 
 
 
@@ -196,11 +138,29 @@
             font-size: px-to-em(22);
             line-height: lh-to-per(25, 22);
         }
+
+        &__skill {
+            width: 80px;
+        }
+
+        &__image {
+            width: 45px;
+            height: 45px;
+        }
+
+        &__text {
+            font-size: px-to-em(14);
+            line-height: 100%;
+        }
     }
 
     @media screen and (max-width: 768px) {
         &__area {
             padding: 0 20px 52px 340px;
+        }
+
+        .pie {
+            --w: 75px;
         }
     }
 
@@ -218,17 +178,33 @@
             line-height: lh-to-per(21, 18);
         }
 
-        &__circle { 
-            svg {
-                width: 40px;
-                height: 40px;
-            }
+    
+    }
+
+    @media screen and (max-width: 360px) {
+       
+        &__skills {
+            padding: 0 30px;
         }
 
-        &__test, &__test2, &__test3, &__test4 {
-            width: 75px;
-            height: 75px;
+        &__skill {
+            width: 90px;
         }
+
+        &__image {
+            width: 40px;
+            height: 40px;
+        }
+
+        &__text {
+            font-size: px-to-em(14);
+            line-height: lh-to-per(22, 14);
+        }
+
+        .pie {
+            --w: 65px;
+        }
+
     }
 
 }
