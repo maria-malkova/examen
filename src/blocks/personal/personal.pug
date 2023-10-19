@@ -8,8 +8,8 @@ mixin personal(modifier)
           p.personal__surname Малькова
           p.personal__job HTML-верстальщик
         ul.personal__social
-          li.personal__icon: include img/vk.svg
-          li.personal__icon: include img/telegram.svg
+          a.personal__icon(href='https://vk.com/id6042636' target='_blank'): include img/vk.svg
+          a.personal__icon(href='https://t.me/username_Maria' target='_blank'): include img/telegram.svg
           li.personal__icon: include img/git.svg
     .personal__mobile
       .personal__mdata
@@ -18,8 +18,8 @@ mixin personal(modifier)
           p.personal__msurname Малькова
         p.personal__mjob HTML-верстальщик
         .personal__msocial
-          li.personal__micon: include img/vk.svg
-          li.personal__micon: include img/telegram.svg
+          a.personal__micon(href='https://vk.com/id6042636' target='_blank'): include img/vk.svg
+          a.personal__micon(href='https://t.me/username_Maria' target='_blank'): include img/telegram.svg
           li.personal__micon: include img/git.svg
       img(src='img/personal_photo.png' alt='Мария Малькова').personal__mphoto
     .personal__mresume
