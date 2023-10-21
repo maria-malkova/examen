@@ -1,7 +1,7 @@
 mixin personal(modifier)
   section.personal&attributes(attributes)
     .personal__area
-      img(src='img/personal_photo.png' alt='Мария Малькова').personal__photo
+      img(src='img/personal_photo1.png' alt='Мария Малькова').personal__photo
       .personal__block  
         .personal__info
           p.personal__name Мария
@@ -10,7 +10,7 @@ mixin personal(modifier)
         ul.personal__social
           a.personal__icon(href='https://vk.com/id6042636' target='_blank'): include img/vk.svg
           a.personal__icon(href='https://t.me/username_Maria' target='_blank'): include img/telegram.svg
-          li.personal__icon: include img/git.svg
+          a.personal__icon(href='https://github.com/maria-malkova' target='_blank'): include img/git.svg
     .personal__mobile
       .personal__mdata
         .personal__minfo 
@@ -20,8 +20,8 @@ mixin personal(modifier)
         .personal__msocial
           a.personal__micon(href='https://vk.com/id6042636' target='_blank'): include img/vk.svg
           a.personal__micon(href='https://t.me/username_Maria' target='_blank'): include img/telegram.svg
-          li.personal__micon: include img/git.svg
-      img(src='img/personal_photo.png' alt='Мария Малькова').personal__mphoto
+          a.personal__micon(href='https://github.com/maria-malkova' target='_blank'): include img/git.svg
+      img(src='img/personal_photo1.png' alt='Мария Малькова').personal__mphoto
     .personal__mresume
       a.personal__mdownload(href='#') Скачать резюме 
         include img/mdownload.svg
