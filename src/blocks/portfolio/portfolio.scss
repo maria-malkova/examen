@@ -3,7 +3,7 @@
     width: 100%;
     height: 100%;
     max-width: 488px;
-    min-height: 1550px;
+    min-height: 2000px;
     background-color: var(--bkg-color-portfolio);
     z-index: 1;
 
@@ -39,6 +39,16 @@
         font-size: px-to-em(18);
         line-height: lh-to-per(25, 18);
         color: var(--text-color-portfolio);
+
+        display: block;    
+        text-decoration: none;
+        cursor: pointer;
+
+        &:hover {
+            color: #56DCFF;
+            opacity: 1;
+            text-decoration: underline;
+        }
     }
 
     &__photo {

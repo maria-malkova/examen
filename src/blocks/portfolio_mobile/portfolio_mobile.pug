@@ -12,10 +12,11 @@ mixin portfolio_mobile(modifier)
           a.portfolio_mobile__link(href='#') Страница 
       li.portfolio_mobile__card
         .portfolio_mobile__content
-          h3.portfolio_mobile__name Сайт "Кофе"
+          a.portfolio_mobile__name(href='../works/kofe/index.html' target='_blank') Сайт "Кофе"
           a.portfolio_mobile__link(href='https://github.com/maria-malkova/kofe' target='_blank') Код на GitHub
           a.portfolio_mobile__link(href='../works/kofe/index.html' target='_blank') Страница 
-        img(src='img/portfolio_kofe.png' alt='Сайт Кофе').portfolio_mobile__photo
+        //img(src='img/portfolio_kofe.png' alt='Сайт Кофе').portfolio_mobile__photo
+        a.portfolio_mobile__link(href='../works/kofe/index.html' target='_blank'): img(src='img/portfolio_kofe.png' alt='Сайт Кофе').portfolio_mobile__photo
       li.portfolio_mobile__card
         img(src='img/portfolio_sparrow.jpg' alt='Воробей').portfolio_mobile__photo
         .portfolio_mobile__content

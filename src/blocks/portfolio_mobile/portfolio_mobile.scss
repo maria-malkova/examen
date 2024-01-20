@@ -61,6 +61,16 @@
             font-size: px-to-em(16);
             line-height: lh-to-per(21, 16);
             color: #394244;
+
+            display: block;    
+            text-decoration: none;
+            cursor: pointer;
+
+            &:hover {
+                color: #56DCFF;
+                opacity: 1;
+                text-decoration: underline;
+            }
         }
 
         &__link {
@@ -107,9 +117,10 @@
         &__link {
             font-weight: 400;
             font-size: px-to-em(10);
-            line-height: lh-to-per(11, 10);
+            line-height: lh-to-per(15, 10);
             min-width: 80px;
             padding: 5px;
+            margin: 5px;
         }
     }
   
