@@ -3,11 +3,11 @@
     &__area {
         width: 100%;
         max-width: 1280px;
-        padding: 0 0 62px 660px;
+        padding: 0 0 42px 660px;
         display: flex;
         justify-content: space-between;
         color: var(--text-color);
-
+        margin-top: -500px;
     }
 
     &__block {
@@ -85,6 +85,7 @@
     @media screen and (max-width: 1201px) {
         &__area {
             padding: 0 60px 52px 600px;
+            margin-top: 0;
         }
 
         &__photo {
@@ -108,11 +109,12 @@
         &__area {
             padding: 0 40px 52px 460px;
             justify-content: start;
+
         }
 
         &__photo {
             width: 100%;
-            max-width: 174px;
+            max-width: 144px;
             max-height: 174px;
             margin-right: 40px;
         }
@@ -241,7 +243,7 @@
 
         &__mphoto {
             width: 100%;
-            max-width: 130px;
+            max-width: 100px;
             max-height: 123px;
             margin-right: 0;
         }

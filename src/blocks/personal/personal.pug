@@ -25,7 +25,8 @@ mixin personal(modifier)
     .personal__mresume
       a.personal__mdownload(href='#') Скачать резюме 
         include img/mdownload.svg
-      .personal__msymbol(data-title = 'Изменить тему'): include img/kwork.svg
+      //- .personal__msymbol(data-title = 'Изменить тему'): include img/kwork.svg
+      .personal__msymbol: include img/kwork.svg
       a.personal__mkwork(href='#') KWORK
 
 

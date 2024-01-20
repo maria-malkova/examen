@@ -13,8 +13,13 @@ mixin header(modifier)
           .header__icon: include img/global.svg
           a.header__info(href='#') г.Санкт-Петербург / г.Тверь
       .header__resume
-        .header__symbol(data-title = 'Изменить тему'): include img/kwork.svg
+        //.header__symbol(data-title = 'Изменить тему'): include img/kwork.svg
+        .header__symbol: include img/kwork.svg
         a.header__kwork(href='#') KWORK
         a.header__download(href='#') Скачать резюме 
           include img/download.svg
+      a.header__proverka(href='../works/primer1.png') проверка1
+      a.header__proverka(href='../works/kofe/primer2.jpg') проверка2
+      a.header__proverka(href='../works/kofe/index.html') проверка3
+
 
